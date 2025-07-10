@@ -1,16 +1,25 @@
-# Flujo de Inicio de Sesión
+## 🧑‍💻 Flujo de Login de Usuario
 
-Este documento describe paso a paso cómo un usuario inicia sesión en la aplicación.
+El siguiente diagrama de pasos describe cómo un usuario accede al sistema hasta visualizar su dashboard principal.
 
-## Pasos
+### Pasos del flujo
 
-1. Navegar a la página de inicio de sesión.
-2. Ingresar el **correo electrónico** en el campo correspondiente.
-3. Escribir la **contraseña** asociada a la cuenta.
-4. Presionar el botón **Iniciar sesión**.
-5. El sistema verifica las credenciales ingresadas.
-6. Si son válidas, se crea la sesión y se redirige al *dashboard*.
-7. En caso de error, se muestra un mensaje indicando que los datos son incorrectos.
+1. El usuario ingresa a la ruta `/login` desde su navegador.
+2. Se carga el formulario de autenticación con campos de **correo** y **contraseña**.
+3. El usuario completa sus credenciales y hace clic en **Iniciar sesión**.
+4. El servidor valida los datos recibidos.
+5. Si las credenciales son correctas, se genera un token de sesión y se almacena en una cookie segura.
+6. El sistema redirige automáticamente al usuario a `/dashboard`.
+7. Finalmente se muestran los widgets principales del panel de control.
 
-> **Nota:** Verifica que el bloqueo de mayúsculas esté desactivado y que el navegador permita cookies para mantener la sesión activa.
-> :information_source: **Recuerda**: tu contraseña diferencia entre mayúsculas y minúsculas.
+### Notas adicionales
+
+- El formulario debe ser accesible y responder en dispositivos móviles.
+- Se recomienda mostrar un indicador de carga mientras se verifica la información.
+
+!!! note "¿Olvidaste tu contraseña?"
+    Utiliza la opción *Recuperar contraseña* para recibir un enlace de restablecimiento en tu correo electrónico.
+
+!!! warning "Importante"
+    Por motivos de seguridad se bloquea la cuenta tras **5 intentos fallidos** en un lapso de 10 minutos.
+
