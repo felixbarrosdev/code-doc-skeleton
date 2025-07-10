@@ -45,6 +45,12 @@ Se basa en **MkDocs** y está pensado para proyectos que siguen la filosofía *d
 
 Con esta estructura podrás mantener tu documentación organizada y lista para publicarse.
 
+## Configurar tu proyecto
+1. Edita `mkdocs.yml` para actualizar `site_name` y `repo_url`.
+2. Personaliza los colores y características del tema en la sección `theme`.
+3. Agrega tus páginas a la clave `nav` para que aparezcan en la navegación.
+
+
 ## Publicar la documentación
 
 Para compilar y publicar el sitio:
