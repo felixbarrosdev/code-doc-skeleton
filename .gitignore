@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# MkDocs build directory
+public/
+
+# Virtual environments
+env/
+venv/
