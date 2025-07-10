@@ -1,31 +1,41 @@
 site_name: Code Doc Skeleton
 site_url: https://example.com
 repo_url: https://github.com/example/code-doc-skeleton
+
 theme:
   name: material
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
     - scheme: slate
       primary: indigo
       accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
     - navigation.sections
     - navigation.expand
     - toc.integrate
     - content.code.copy
 
+plugins:
+  - search
+
 docs_dir: docs
 site_dir: public
 
 nav:
-  - Inicio: index.md
-  - Flujos de Usuario:
+  - Home: index.md
+  - User Flows:
       - Login: flujo-usuarios/login.md
-  - Reglas de Negocio:
-      - Autenticación: reglas-negocio/autenticacion.md
+  - Business Rules:
+      - Authentication: reglas-negocio/autenticacion.md
   - APIs:
       - Login API: apis/login-api.md
-  - Cambios:
-      - "2025-07-09 Login Social": cambios/2025-07-09-feature-login-social.md
+  - Changelog:
+      - Login Social: cambios/2025-07-09-feature-login-social.md
