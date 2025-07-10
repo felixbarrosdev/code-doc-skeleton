@@ -1,5 +1,5 @@
 # Code Documentation Skeleton
-[![Validate Docs](https://github.com/example/code-doc-skeleton/actions/workflows/validate-docs.yml/badge.svg)](https://github.com/example/code-doc-skeleton/actions/workflows/validate-docs.yml)
+[![Validate Docs](https://github.com/felixbarrosdev/code-doc-skeleton/actions/workflows/validate-docs.yml/badge.svg)](https://github.com/felixbarrosdev/code-doc-skeleton/actions/workflows/validate-docs.yml)
 
 Este repositorio contiene una estructura modular para escribir y publicar documentación técnica.
 Se basa en **MkDocs** y está pensado para proyectos que siguen la filosofía *documentation‑first*.
