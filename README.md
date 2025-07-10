@@ -44,3 +44,12 @@ Se basa en **MkDocs** y está pensado para proyectos que siguen la filosofía *d
 3. Agrega la nueva página al menú editando `mkdocs.yml` si es necesario.
 
 Con esta estructura podrás mantener tu documentación organizada y lista para publicarse.
+
+## Publicar la documentación
+
+Para compilar y publicar el sitio:
+
+```bash
+pip install -r requirements.txt
+mkdocs gh-deploy --clean
+```

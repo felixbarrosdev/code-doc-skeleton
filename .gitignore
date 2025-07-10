@@ -1,10 +1,36 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+*.log
 
-# MkDocs build directory
-public/
-
-# Virtual environments
+# Entornos virtuales
 env/
 venv/
+.venv/
+.Python
+
+# IDEs y editores
+.vscode/
+.idea/
+
+# MkDocs
+site/
+public/
+docs/assets/
+docs/*.html
+mkdocs.yml.lock
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# MkDocs material theme override (si lo agregás en futuro)
+overrides/
+
+# GitHub Pages (solo si deployás desde gh-pages, no desde main)
+gh-pages/
+
+# Archivos temporales
+*.tmp
+*.swp
