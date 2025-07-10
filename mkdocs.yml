@@ -27,7 +27,7 @@ plugins:
   - search
 
 docs_dir: docs
-site_dir: public
+#site_dir: public
 
 nav:
   - Home: index.md
